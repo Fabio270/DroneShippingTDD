@@ -1,7 +1,8 @@
 import DeliverDrone.Drone;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.*;
 
 public class DeliverDroneTest {
     @Test
@@ -10,7 +11,7 @@ public class DeliverDroneTest {
         Drone drone = new Drone();
         drone.getMeasurements(75, 100, 50, 100, 30);
         drone.isBoxFitting();
-        Assertions.assertThat(drone.isBoxFitting()).isFalse();
+        assertThat(drone.isBoxFitting()).isFalse();
     }
 
     @Test
@@ -19,6 +20,6 @@ public class DeliverDroneTest {
         Drone drone = new Drone();
         drone.getMeasurements(30, 50, 80, 80, 60);
         drone.isBoxFitting();
-        Assertions.assertThat(drone.isBoxFitting()).isTrue();
+        assertThat(drone.isBoxFitting()).isTrue();
     }
 }
