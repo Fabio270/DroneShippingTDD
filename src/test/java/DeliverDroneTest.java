@@ -9,8 +9,8 @@ public class DeliverDroneTest {
     void shouldTheDroneGetBoxAndWindowMeasurementsAndReturnN(){
         Drone drone = new Drone();
         drone.getMeasurements(75, 100, 50, 100, 30);
-        drone.isBoxFiting();
-        Assertions.assertThat(drone.isBoxFiting()).isFalse();
+        drone.isBoxFitting();
+        Assertions.assertThat(drone.isBoxFitting()).isFalse();
     }
 
     @Test
@@ -18,7 +18,7 @@ public class DeliverDroneTest {
     void shouldTheDroneGetBoxAndWindowMeasurementsAndReturnS(){
         Drone drone = new Drone();
         drone.getMeasurements(30, 50, 80, 80, 60);
-        drone.isBoxFiting();
-        Assertions.assertThat(drone.isBoxFiting()).isTrue();
+        drone.isBoxFitting();
+        Assertions.assertThat(drone.isBoxFitting()).isTrue();
     }
 }
