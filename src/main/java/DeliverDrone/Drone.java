@@ -14,8 +14,27 @@ public class Drone {
         setWindowl(l);
     }
 
+    public boolean calculate(){
+        if ((getBoxA() <= getWindowl() && getBoxB() <= getWindowh()) ||
+                (getBoxA() <= getWindowl() && getBoxC() <= getWindowh()) ||
+                (getBoxB() <= getWindowl() && getBoxA() <= getWindowh()) ||
+                (getBoxB() <= getWindowl() && getBoxC() <= getWindowh()) ||
+                (getBoxC() <= getWindowl() && getBoxA() <= getWindowh()) ||
+                (getBoxC() <= getWindowl() && getBoxB() <= getWindowh())){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     public void isBoxFitting() {
-        System.out.print("S");
+        if (calculate()){
+            System.out.print("S");
+        }
+        else {
+            System.out.println("N");
+        }
     }
 
     public int getBoxA() {
