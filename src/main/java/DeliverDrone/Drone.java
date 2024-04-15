@@ -14,12 +14,12 @@ public class Drone {
         setWindowl(l);
     }
 
-    public int getBoxA() {
-        return boxA;
+    public void isBoxFitting() {
+        System.out.print("S");
     }
 
-    public boolean isBoxFitting() {
-        return true;
+    public int getBoxA() {
+        return boxA;
     }
 
     public void setBoxA(int boxA) {
