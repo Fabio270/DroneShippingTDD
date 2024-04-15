@@ -6,6 +6,6 @@ public class Drone {
 
 
     public boolean isBoxFiting() {
-        return false;
+        return true;
     }
 }
